@@ -59,7 +59,7 @@ begin
     -- Comparator
     comp_out <= '1' when counter_value < duty_cycle else '0';
 
-    -- D Flip-Flop for output synchronization
+    -- D Flip-Flop for output synchronization and clean output(without and indesirable impulses)
     process(clk, rst)
     begin
         if rst = '1' then
