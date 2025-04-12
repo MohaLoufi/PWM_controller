@@ -19,8 +19,7 @@ architecture behavior of PWM_tb is
             pwm_out : out std_logic
         );
     end component;
-    
-    -- Constants and signals
+
     constant pwm_bits : integer := 8;
     constant clk_period : time := 10 ns;
     signal clk : std_logic := '0';
@@ -67,7 +66,7 @@ begin
         duty_cycle <= to_unsigned(255, pwm_bits); -- 100% duty cycle
         wait for clk_period * 100;
         
-        wait; -- Suspend process indefinitely
+        wait; 
     end process;
     
 end behavior;
