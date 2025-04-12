@@ -3,10 +3,6 @@
 ## Overview
 This repository contains a flexible VHDL implementation of a high-resolution PWM (Pulse Width Modulation) controller with configurable bit width and frequency settings. The design features an enhanced architecture that provides precise control over both PWM frequency and resolution.
 
-## Architecture
-
-![PWM Controller Block Diagram](pwm_architecture.png)
-
 The PWM controller consists of four primary components:
 
 1. **Timer** - Controls the overall PWM period based on a configurable FINAL_VALUE parameter
